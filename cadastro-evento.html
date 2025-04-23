@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Cadastro - Show do Gusttavo Lima</title>
+</head>
+<body>
+    <h1>Show do Gusttavo Lima</h1>
+    <p>Bem-vindo! Nivaldo Batista Lima, mais conhecido pelo nome artístico de Gusttavo Lima, é um cantor e compositor brasileiro. Gusttavo Lima alcançou popularidade nacional e internacional na América com a música "Balada Boa" ou mais conhecido por seu refrão "Tchê tcherere tchê", que ele mesmo valorizava negativamente, a ponto de não querer gravá-la em um primeiro momento, mas com a ocasional que se tornou um sucesso que chegou ao Top 10 da revista Billboard Brasil. Em 2012, foi uma das músicas mais ouvidas na Europa em países como a Holanda. Em abril, seu terceiro DVD foi gravado na cidade de São Paulo. Seu álbum Gusttavo Lima e Você vendeu mais de 50 mil cópias e recebeu disco de platina.</p>
+    <hr>
+    <h2>Preencha as informações abaixo para fazer seu cadastro:</h2><p>
+        <form>
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome">
+
+        <p></p>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+
+        <p></p>
+            <label for="data">Data de nascimento:</label>
+            <input type="text" id="data" name="data">
+
+        <p></p>
+            <p>Gênero:</p>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label><br>
+            
+            <input type="radio" id="feminino" name="genero" value="feminino">
+            <label for="feminino">Feminino</label><br>
+
+        <p></p>
+            <p>Interesses:</p>
+            <label for="Música boa">
+                <input type="checkbox" id="musica" name="opcoes" value="musica">
+                Música boa
+            </label>
+            <br>
+            <label for="Bebidas">
+                <input type="checkbox" id="bebida" name="opcoes" value="bebida">
+                Bebidas
+            </label>
+            <br>
+            <label for="Curtição">
+                <input type="checkbox" id="curticao" name="opcoes" value="curticao">
+                Curtição
+            </label>
+
+            <p></p>
+            <label for="estado">Estado:</label>
+                <select id="estado" name="estado">
+                    <option value="minasgerais">Minas Gerais</option>
+                    <option value="para">Pará</option>
+                    <option value="pernambuco">Pernambuco</option>
+                    <option value="santacatarina">Santa Catarina</option>
+                </select>
+
+        </form>
+                <p></p>
+                <form action="/submit" method="post">
+                    <label for="mensagem">Suas expectativas para o evento:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Escreva aqui..."></textarea><br>
+                    <p></p>
+                    <input type="submit" value="Enviar">
+        </form>
+        <p></p>
+        <hr>
+        <h2>Próximas atividades</h2>
+        <table border="1">
+            <thead>
+                <td>Estado</td>
+                <td>Data</td>
+                <td>Horário</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>10/05/2025</td>
+                    <td>15:00 - 20:30</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td>17/05/2025</td>
+                    <td>17:00 - 22:30</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td>22/05/2025</td>
+                    <td>15:00 - 20:30</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td>29/05/2025</td>
+                    <td>17:00 - 22:30</td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>
